@@ -1,6 +1,7 @@
 package com.example.demo.configuration;
 
 import com.example.demo.model.User;
+import com.example.demo.model.UserRole;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
@@ -34,7 +35,7 @@ public class JwtTokenGeneratorFilter extends UsernamePasswordAuthenticationFilte
             throws AuthenticationException {
 
         try {
-            User creds = new ObjectMapper().readValue(request.getInputStream(), User.class);
+            UserRole creds = new ObjectMapper().readValue(request.getInputStream(), UserRole.class);
             UsernamePasswordAuthenticationToken authToken = new UsernamePasswordAuthenticationToken(creds
                     ,Collections.emptyList());
             return authManager.authenticate(authToken);
