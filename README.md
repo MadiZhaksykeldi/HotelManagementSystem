@@ -11,6 +11,7 @@ This project consists of:
 
 ## Brief Logic:
 Basically there are many types of rooms and they have fixed cost, rating and they are reserved by some clients from X date to Y date.
+
 ![User](https://sun9-68.userapi.com/UO39E9MhETPMlbOp3sT0CHLS_4Zn8tEZAkGvrw/8cVUs9CoBwA.jpg)
 ![Room](https://sun9-12.userapi.com/blORTXZquafU7_2pZcgKHSJySsNYG3qmUPQCow/AZnCeDUmK2I.jpg)
 ![Room Details](https://sun9-29.userapi.com/6hT4HYBjPY3YwNviIX7_Vp3cSlG-ppa_e9M8NQ/rtSOyJ2uhhA.jpg)
