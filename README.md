@@ -1,5 +1,5 @@
 # Endterm Project - Hotel Management System
-##I continued my previous work and added some new things I've _learned_ in this attestation
+## I continued my previous work and added some new things I've _learned_ in this attestation
 This project consists of:
 1. Spring Data JPA, personally did with MySQL
 2. Rest Controllers
