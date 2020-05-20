@@ -33,7 +33,6 @@ public class UserController {
         UserRole userrole = new UserRole();
         userrole.setPassword(password);
         userrole.setUsername(username);
-
         userService.createUser(userrole);
     }
 
