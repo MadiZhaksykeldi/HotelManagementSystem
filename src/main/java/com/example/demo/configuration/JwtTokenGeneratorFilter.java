@@ -1,6 +1,5 @@
 package com.example.demo.configuration;
 
-import com.example.demo.model.User;
 import com.example.demo.model.UserRole;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.jsonwebtoken.Jwts;

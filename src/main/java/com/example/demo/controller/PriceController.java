@@ -7,10 +7,7 @@ import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.Errors;
 import org.springframework.validation.ObjectError;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import com.example.demo.model.PriceDetail;
 import com.example.demo.response.Response;
@@ -18,7 +15,7 @@ import com.example.demo.response.ResponseBuilder;
 import com.example.demo.service.PriceService;
 
 @RestController
-@RequestMapping("hotel/v1")
+@RequestMapping("/prices")
 public class PriceController {
     @Autowired
     private PriceService priceService;

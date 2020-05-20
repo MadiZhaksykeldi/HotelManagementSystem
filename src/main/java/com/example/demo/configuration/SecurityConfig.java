@@ -1,5 +1,6 @@
 package com.example.demo.configuration;
 
+
 import com.example.demo.service.impl.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -22,7 +23,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .authorizeRequests()
                 .antMatchers("/auth/**").permitAll()
                 .antMatchers("/users/hello/**").permitAll()
-                .antMatchers("/users/create").hasAuthority("ADMIN")
+                .antMatchers("/users/create").permitAll()
+                .antMatchers("/rooms/getRooms").permitAll()
+                .antMatchers("/prices/addPrice").permitAll()
+                .antMatchers("/bookings/book").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 // What's the authenticationManager()?

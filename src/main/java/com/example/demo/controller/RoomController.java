@@ -3,18 +3,14 @@ package com.example.demo.controller;
 import com.example.demo.response.Response;
 import com.example.demo.service.RoomService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 
 @RestController
-@RequestMapping("/hotel/v1")
+@RequestMapping("/rooms")
 @Api(value = "Manage the hotel room", description = "Used to manage the room")
 public class RoomController {
 
