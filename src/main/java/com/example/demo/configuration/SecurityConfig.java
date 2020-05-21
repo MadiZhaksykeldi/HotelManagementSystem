@@ -25,15 +25,17 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/users/hello/**").permitAll()
                 .antMatchers("/users/create").permitAll()
                 .antMatchers("/rooms/getRooms").permitAll()
+                .antMatchers("/rooms/getPrice").permitAll()
                 .antMatchers("/prices/addPrice").permitAll()
                 .antMatchers("/bookings/book").permitAll()
+                .antMatchers("/bookings/checkAvailability").permitAll()
                 .anyRequest().authenticated()
+                //.and().formLogin()
                 .and()
                 // What's the authenticationManager()?
                 // An object provided by WebSecurityConfigurerAdapter, used to authenticate the user passing user's credentials
                 // The filter needs this auth manager to authenticate the user.
                 .addFilter(new JwtTokenGeneratorFilter(authenticationManager()))
-
                 // Add a filter to validate the tokens with every request
                 .addFilterAfter(new JwtTokenAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class);
     }

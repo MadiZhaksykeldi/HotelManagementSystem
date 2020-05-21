@@ -31,4 +31,5 @@ public class PriceController {
         }
         return priceService.addPriceDetails(priceDetail);
     }
+
 }
